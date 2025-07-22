@@ -293,8 +293,8 @@ i18n.prototype = {
     const self = this;
     let prefLocale;
 
-    const match = regExp.exec(accept);
-    while (!prefLocale && (match)) {
+	let match;
+	while (!prefLocale && (match = regExp.exec(accept))) {
       const locale = match[2].toLowerCase();
       const parts = locale.split("-");
 
