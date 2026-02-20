@@ -1,6 +1,5 @@
 // eslint.config.mjs
 import eslintPluginImport from "eslint-plugin-import";
-import airbnbBase from "eslint-config-airbnb-base";
 
 export default [
   {
@@ -22,7 +21,6 @@ export default [
     },
     extends: [
       "eslint:recommended",
-      airbnbBase,
     ],
     rules: {
       "callback-return": ["error", ["done", "proceed", "next", "onwards", "callback", "cb"]],
