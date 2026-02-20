@@ -39,7 +39,7 @@ const i18n = function (opt) {
   const self = this;
 
   // Put into dev or production mode
-  this.devMode = process.env.NODE_ENV == "development";
+  this.devMode = process.env.NODE_ENV === "development";
 
   // Copy over options
   for (const prop in opt) {
@@ -293,8 +293,8 @@ i18n.prototype = {
     const self = this;
     let prefLocale;
 
-	let match;
-	while (!prefLocale && (match = regExp.exec(accept))) {
+    let match;
+    while (!prefLocale && (match = regExp.exec(accept))) {
       const locale = match[2].toLowerCase();
       const parts = locale.split("-");
 
@@ -306,7 +306,6 @@ i18n.prototype = {
     }
     return prefLocale || this.defaultLocale;
   },
-
 
   // read locale file, translate a msg and write to fs if new
   translate: function (locale, singular, plural) {

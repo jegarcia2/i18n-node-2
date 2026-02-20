@@ -13,22 +13,20 @@
     "lib": "."
   },
   "dependencies": {
-    "debug": "^3.1.0",
-    "eslint": "^5.15.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "sprintf-js": "^1.1.1"
+    "debug": "^4.4.3",
+    "sprintf-js": "^1.1.3"
   },
   "devDependencies": {
-    "expresso": ">=0.9.2",
-    "js-yaml": "^3.4.3"
+    "eslint": "^9.39.1",
+    "eslint-plugin-import": "^2.32.0",
+    "js-yaml": "^4.1.1",
+    "mocha": "^11.7.4"
   },
   "engines": {
-    "node": ">=14.16.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
-    "test": "expresso test/*"
+    "test": "mocha test/*.js"
   },
   "license": "MIT"
 }
